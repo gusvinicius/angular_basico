@@ -1,0 +1,20 @@
+.texto{
+    color: rgb(255, 253, 253);
+}
+header{
+    background-color: rgb(247, 4, 4);
+}
+h1{
+    text-align: center;
+    margin-bottom: 1%;
+}
+ul{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+li{
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+}

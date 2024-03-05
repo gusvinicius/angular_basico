@@ -1,0 +1,30 @@
+<h1>bem-vindo a tela de lista</h1>
+
+<div [ngClass]="div_centralizadora">
+    <button class="btn" (click)="eventoMostrar()">{{textoBtn}}</button>
+</div>
+
+<div class="ocultadora" *ngIf="mostrar">
+    <h3 class="sub-title">LISTA DE USUARIOS ABAIXO:</h3>
+
+    <div [ngClass]="div_centralizadora" *ngFor="let usuario of dados_usuarios">
+
+        <div [ngClass]="div_central">
+            <div [ngClass]="conteiner_dados">
+                <h3>NOME: </h3>
+                <h3 [ngClass]="dados"> {{usuario.nome}} </h3>
+            </div>
+
+            <div [ngClass]="conteiner_dados">
+                <h3>IDADE: </h3>
+                <h3 [ngClass]="dados"> {{usuario.idade}} </h3>
+            </div>
+
+            <div [ngClass]="conteiner_dados">
+                <h3>TRABALHO: </h3>
+                <h3 [ngClass]="dados"> {{usuario.trabalho}} </h3>
+            </div>
+        </div>
+
+    </div>
+</div>

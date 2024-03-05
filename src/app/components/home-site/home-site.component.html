@@ -1,0 +1,17 @@
+<main>
+    <div>
+        <h2>BEM-VINDO A HOME DO SISTEMA <a [ngClass]="Classes_txt_nome">ANGULAR</a></h2>
+    </div>
+
+    <div class="div_centraliza">
+        <div class="div_centraliza">
+            <h3 class="title">DIGITE UMA MENSAGEM</h3>
+
+            <form>
+                <input class="entrada" type="text" [(ngModel)]="texto" name="texto" placeholder="digite um texto">
+            </form>
+
+            <h3 *ngIf="texto !== ''">texto digitado: {{texto}}</h3>
+        </div>
+    </div>
+</main>

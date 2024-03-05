@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*CONFIGRUAÇÃO DE ESTILO GERAL*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*CONFIGRUAÇÃO DE TEXTOS E INPUTS*/
+.title{
+    text-align: center;
+}
+
+.entrada{
+    padding: 5px;
+    text-align: center;
+    width: 200px;
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.btn{
+    background-color: transparent;
+
+    text-align: center;
+
+    width: 200px;
+    height: 30px;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+/*ESTILIZAÇÃO DE DIV*/
+.div_centraliza{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.div_central{
+    margin-top: 20px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+
+    width: 300px;
+    height: 100px;
+}
+
+.div_dados{
+    display: flex;
+    flex-flow: row;
+
+    margin-bottom: 5%;
+}
+.dado_usuario{
+    margin-left: 15px;
+}

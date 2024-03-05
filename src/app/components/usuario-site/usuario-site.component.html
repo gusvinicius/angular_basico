@@ -1,0 +1,21 @@
+<h1> {{dados_usuario.nome | titlecase}} bem-vindo a tela de usuario</h1>
+
+
+<div [ngClass]="div_centralizadora">
+    <div [ngClass]="div_central">
+        <div [ngClass]="conteiner_dados">
+            <h3>NOME: </h3>
+            <h3 [ngClass]="dados"> {{dados_usuario.nome}} </h3>
+        </div>
+
+        <div [ngClass]="conteiner_dados">
+            <h3>IDADE: </h3>
+            <h3 [ngClass]="dados"> {{dados_usuario.idade}} </h3>
+        </div>
+
+        <div [ngClass]="conteiner_dados">
+            <h3>TRABALHO: </h3>
+            <h3 [ngClass]="dados"> {{dados_usuario.trabalho}} </h3>
+        </div>
+    </div>
+</div>
